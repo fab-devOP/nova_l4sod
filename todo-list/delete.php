@@ -2,9 +2,9 @@
 $conn= mysqli_connect('localhost','root','','todo-list');
 $delete_id=$_GET['delete_id'];
 
-$qury=mysqli_query($conn,"DELETE FROM tasks WHERE task_id=$delete_id");
+$query=mysqli_query($conn,"DELETE FROM tasks WHERE task_id=$delete_id");
 
-if($qury){
+if($query){
     header("location:./index.php");
 }
 else{
